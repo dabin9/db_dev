@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> INDEX PAGE </title>
+<script src="/js/json.js" defer></script>
+${ require( './include/head.html' )() }
+</head>
+<body>
+<div class="wrap">
+	${ require( './include/header.html' )() }
+	<main>
+		<section class="common-section">
+			<!-- 최신 글 -->
+			${ require( './notice.html' )() }
+			<!-- 소개 -->
+			${ require( './intro.html' )() }
+			<!-- 모든 글 -->
+			${ require( './alllist.html' )() }
+		</div>
+	</main>
+	${ require( './include/footer.html' )() }
+</div>
+</body>
+</html>

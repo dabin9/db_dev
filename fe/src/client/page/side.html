@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> INDEX PAGE </title>
+${ require( './include/head.html' )() }
+</head>
+<body>
+<div class="wrap">
+	${ require( './include/header.html' )() }
+	<main>
+        <section class="list-section">
+            <div class="link-list-wrap">
+                <ul class="list-box">
+                    <li class="list">
+                        <span class="num">NO.</span>
+                        <span class="title">TITLE.</span>
+                        <span class="date">Date.</span>
+                        <span class="date-add">Add.</span>
+                    </li>
+                    <li class="list">
+                        <span class="num">1</span>
+                        <a href="./project1.html" class="link-go"><span class="title">자유로운 이동이 가능한 투드리스트</span></a>
+                        <span class="date">23-05-23</span>
+                        <span class="date-add">23-05-23</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+	${ require( './include/footer.html' )() }
+</div>
+</body>
+</html>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>

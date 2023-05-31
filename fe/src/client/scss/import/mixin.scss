@@ -1,0 +1,29 @@
+@mixin hide_font {
+	font-size: 0;
+	color: transparent;
+}
+
+@mixin ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+@mixin multi_ellipsis( $line ) {
+	display: -webkit-box;
+	-webkit-line-clamp: $line;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+@mixin tag_custom ( $bg-color ) {
+	font-size: 10px;
+	border-radius: 5px;
+	background-color: $bg-color;
+	color: #fff;
+	padding: 2px 6px;
+	font-weight: 500;
+	margin: 0 1px;
+	white-space: nowrap;
+}

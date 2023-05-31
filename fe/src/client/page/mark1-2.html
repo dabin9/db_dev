@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> INDEX PAGE </title>
+${ require( './include/head.html' )() }
+</head>
+<body>
+<div class="wrap">
+	${ require( './include/header.html' )() }
+	<main>
+        <section class="detail-section">
+            <h2 class="page-title">Grid layout 심화 이해하기</h2>
+            <div class="comm-amount">
+                <a href="#" class="category">
+                    <span>마크업1-1</span>
+                </a>
+                <span class="date">2023년04월19일</span>
+            </div>
+            <!-- <button type="button" class="btn">aaa</button> -->
+            <div class="contents">
+                <div class="box-wrap">
+                    <div class="content-txt-wrap">
+                        <h4 class="label">🤓설명</h4>
+                        <p class="txt">
+                            grid의 minmax는 min(최솟값)과 max(최댓값)을 정해두어 colums과 row의 트랙의 비율에 맞게,<br>
+                            유연하게 auto로 바뀐다. 
+                            <br>
+                            요즘에 많이 나오은 폴더블폰이나 언젠가 휴대폰이 세모나 별모양이 될지 모를때,
+                            <br>
+                            화면 비율이 점점 다양화되가고 있는 추세이므로 오류가 적다면 빠르게 구현할수 있을듯 하다.
+                            <br>
+                            유지보수 관점으로도 시간단축과 누구나 알수 있을 정도의 수준이니 수정에도 용이할것같지만
+                            <br>
+                            크기를 100%나 auto가 아닌 px 등 단위로 고정시킬 경우에는 용이한 유지보수를 위한 코드가 아닌것같다.  
+                        </p>
+                    </div>
+                    <div class="box">
+                        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="OJBROEm" data-user="dallight" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                            <span>See the Pen <a href="https://codepen.io/dallight/pen/OJBROEm">
+                            Untitled</a> by dabin (<a href="https://codepen.io/dallight">@dallight</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                          </p>
+                    </div>
+                    <div class="content-txt-wrap">
+                        <h4 class="label">설명</h4>
+                        <p class="txt">
+                            다음 grid-template-areas를 이용한 예시이다.<br>
+                            grid를 이용하면서 가장 반응형에 최적화 되어있는 구조이다.<br>
+                            무슨 말이냐면, area로 각자 지정되어있는 element가 해상도 기준으로 각자 위치에 맞게 조정해주는 것이다.<br>
+                            처음에 쓰게 되었을때는 복잡한 layout과 막무가내로 반응형을 만들어달라는 클라이언트덕분에 이 구조를 사용하게 되었었는데,
+                            한땀한땀 적어야하는 구조여서 공이 조금 들어간다는 것과 그만큼 수정과 유지보수하는것도 복잡해지는 단점이 있지만, grid로 미디어쿼리를 충분히 할수 있다는 점에 큰 메리트가 있는것같았다.
+
+
+                        </p>
+                    </div>
+                    <div class="box">
+                          <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="dygpJRv" data-user="dallight" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                            <span>See the Pen <a href="https://codepen.io/dallight/pen/dygpJRv">
+                            Untitled</a> by dabin (<a href="https://codepen.io/dallight">@dallight</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                          </p>
+                    </div>
+                </div>
+                <div class="content-txt-wrap">
+                    <h4 class="label">마무리</h4>
+                    <p class="txt">
+                        다음 단계는 grid를 이용하여 피아노를 만들어보자!<br>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="prev-page">
+            <a href="./mark1.html" class="list-go">목록으로</a>
+        </div>
+    </main>
+	${ require( './include/footer.html' )() }
+</div>
+</body>
+</html>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>

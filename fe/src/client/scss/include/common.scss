@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap');
+@font-face {
+	font-family: 'Pretendard-Regular';
+	src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+body {
+	* {
+		box-sizing: border-box;
+		font-family: 'Noto Sans KR', sans-serif;
+		color: inherit;
+		font-size: inherit;
+	}
+	img { vertical-align: middle; }
+
+	&, html, .wrap { min-height: 100vh; }
+
+} // body
+.detail-section {
+	.page-title {
+		text-align: center;
+		font-size: 32px;
+		font-weight: bold;
+		padding-top: 50px;
+	}
+	.contents {
+		max-width: #{$pc-inner-size}px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 100px;
+		display: flex;
+		flex-direction: column;
+		gap:50px 0;
+	} // .contents 
+} // .detail-section 
+.txt-wrap {
+	p {
+		color: #333;
+		font-size: 24px;
+		font-weight: bold;
+		text-align: center;
+		+ p {
+			font-weight: normal;
+			color: #999;
+			font-size: 14px;
+			margin-top: 10px;
+		}
+	}
+} // .txt-wrap
+.input-line {
+	.input {
+		width: 100%;
+		display: flex;
+		height: 55px;
+		border-bottom:3px solid #ccc;
+		padding-left: 5px;
+		position: relative;
+		z-index: 1;
+		&::placeholder {
+			font-size: 18px;
+			color: #ddd;
+		}
+		&:focus {
+			border-color:#{$main-color};
+		}
+	}
+} // .input-line 
+.for-pw {
+	position: relative;
+	max-width: 360px;
+	min-width: 280px;
+	margin: 40px auto 0 auto;
+	.pw-i {
+		z-index: 2;		
+		position: absolute;
+		width: 34px;height: 34px;
+		right: 0;
+		top: 50% ;
+		transform: translateY(-50%);
+		display: inline-block;
+		width: 25px;height: 25px;
+		cursor: pointer;
+		background: {
+			image:url(../images/icon/hide.png);
+			size:contain;
+			position: 50% 50%;
+			repeat:no-repeat;
+		};
+		&.on {
+			background-image: url(../images/icon/view.png);
+		}
+	}
+} // .for-pw
+.checkbox {
+	input[type=checkbox] {
+		display: none;
+		&:checked {
+			& + .icon {
+				&::after {
+					background: {
+						image:url(../images/icon/ico-chk-blue.png);
+					} // background
+				} // &::after
+			} // & + .icon
+		} // &:checked
+		& + .icon {
+			max-width: 24px;
+			min-width: 24px;
+			width: 100%;
+			height:24px;
+			display: inline-flex;
+			border: 3px solid #ddd;
+			background-color: #fff;
+			position: relative;
+			border-radius: 5px;
+			&::after {
+				content:'';
+				position: absolute;
+				bottom: 0;
+				left: 75%;
+				transform: translateX(-50%);
+				width: 28px;height: 21px;
+				cursor: pointer;
+				background: {
+					image:url(../images/icon/ico-chk-gr.png);
+					repeat:no-repeat;
+					size:contain;
+				} // background
+			} // &::after
+		} // & + .icon
+	}  // input[type=checkbox] 
+} // .checkbox
+.prev-page {
+	padding: 50px 0 100px 0;
+	text-align: center;
+	.list-go {
+		position: relative;
+		display: inline-flex;
+		&:hover {
+			&::after {
+				width: 100%;
+			}
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: -5px;
+			width: 0;
+			height: 1px;
+			background-color: #000;
+			transition: width .3s ease-in-out;
+		}
+	}
+}
+.in-img {
+	max-width: 500px;
+	min-width: 280px;
+	width: 100%;
+	img {
+		max-width: 100%;
+		width: 100%;
+	}
+} // 텍스트 안에 들어가는 이미지 사이즈 280px 제한함

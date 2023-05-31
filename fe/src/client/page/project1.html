@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> INDEX PAGE </title>
+${ require( './include/head.html' )() }
+</head>
+<body>
+<div class="wrap">
+	${ require( './include/header.html' )() }
+	<main>
+        <section class="detail-section">
+            <h2 class="page-title">
+                자유로운 이동이 가능한 투드리스트 만들어보기</h2>
+            <div class="comm-amount">
+                <a href="#" class="category">
+                    <span>sideProject1</span>
+                </a>
+                <span class="date">2023년05월26일</span>
+            </div>
+            <!-- <button type="button" class="btn">aaa</button> -->
+            <div class="contents">
+                <div class="box-wrap">
+                    <div class="content-txt-wrap">
+                        <p class="txt">
+                            어떤 기능을 구현해볼까 하다가 내가 지금 필요한게 무엇인지 생각해보니 투두리스트가 적격이었다.
+                            <br>
+                            내가 필요했던 기능은,
+                            <br>
+                            <br>
+                            1.오늘 해야할거를 정리할겸 적어지기만 하면 됌.<br>
+                            2.데이터를 다루는건 아니지만 저장은 되었으면 함<br>
+                            3.Trello처럼 자유로운 이동이 가능했으면 좋겠음.<br>
+                            <br>
+                            <br>
+                            ... 간단해보이지만..... 레벨0인 나에게 절대로 간단하지 않다....
+                            <br>
+                            <br>
+                            (TMI)
+                            나는 응용력이 좋은 편이 아니여서 최대한 많이 경험한 뒤,<br>
+                            경험한 데이터를 이해 -> 암기를 반복 -> 체화시킨 뒤 응용하면서 배운다.
+                            <br>
+                            <br>
+                            시간도 많이 들고 스트레스도 배로 들지만 나에게 맞는 공부방법은 이게 최선이니,
+                            그저 최선을 다하면 된다 생각한다!
+                            <br>
+                            <br>
+                            배우자마자 바로 할줄 아는건 아인슈타인도 불가능하다고 정승제쌤이 그랬다...
+                            <br>
+                            TMI를 뒤로 하고,
+                            <br>
+                            <br>
+                            먼저 input의 value 값을 newToDoObj 값에 담는다. 
+                            </p>
+                            <div class="in-img">
+                                <img src="../images/temp/project0.png" alt="">
+                            </div>
+                            <p class="txt">
+                                <br>
+                                <br>
+                                newToDoObj의 data.now()값을 id로 지정해 push로 배열에 넣어준다.
+                                <br>
+                                (니꼬쌤이 data값으로 id를 생성하셨다.)     
+                            </p>
+                            <div class="in-img">
+                                <img src="../images/temp/project1.png" alt="">
+                            </div>
+                            <p class="txt">
+                                <br>
+                                <br>
+                                input의 값들이 submit이 된다면 createToDo(생성), saveToDos(저장)에 맞게 변수를 만들었다.
+                                <br>
+                                <br>
+                                생성은 css를 미리 맞춰 놓은 뒤 createElement와 appendChild 를 이용해 생성해주는데
+                                <br>
+                                의식의 흐름대로 적으면 이렇게 늘어지는데 마구 적다가 갑자기 정신차리면 헷갈리니<br>
+                                일단 그냥 최대한 집중해서 끝까지 적어내야한다..!
+                                <br>
+                                <br>
+
+                            </p>
+
+                            <div class="in-img">
+                                <img src="../images/temp/project2.png" alt="">
+                            </div>
+                            <p class="txt">
+                                <br>
+                                <br>
+                                JSON.stringfy로 객체를 string으로 변환시켜준 뒤 local strorage에 저장해준다.<br>
+                                새로고침이 되어도 브라우저 저장공간으로 가게 되어 반휘발성을 띄니 사라지지 않는다!
+                                <br>
+                                <br>
+                                여기서 local storage가 궁금할수 있는데, 많이 알고있는 쿠키와 비교할수 있다.<br>
+                                쿠키는 무조건적인 휘발성(만료기간후 사라짐)을 띄우지만,<br>local storage는 인터넷이 끊겨도 데이터가 지워지지 않는다.
+                                <br>
+                                <br>
+
+                            </p>
+                            <div class="in-img">
+                                <img src="../images/temp/project4.png" alt="">
+                            </div>
+                            <p class="txt">
+                                JSON.stringfy을 콘솔창에 띄워 확인해보자
+                                <br>
+                                <br>
+
+                            </p>
+                            <div class="in-img">
+                                <img src="../images/temp/project3.png" alt="">
+                            </div>
+                            <p class="txt">
+                                <br>
+                                <br>
+                                객체가 배열로 된 string으로 바뀐걸 확인할수 있다.
+                                <br>
+                                <br>
+                                그럼 여기까지의 결과물 확인해볼까요?
+                                <br>
+                                <br>
+                            </p>
+                            <div class="in-img">
+                                <img src="../images/temp/step1.gif" alt="">
+                            </div>
+                            <p class="txt">
+                                다음 X버튼을 누르면 기록된 것이 지워져야 하므로 createElement안을 확인해 보면,
+                            </p>
+                            <div class="in-img">
+                                <img src="../images/temp/project5.png" alt="">
+                            </div>
+                            <p class="txt">
+                                button을 누를시 delete_listener로 이어진다.
+                            </p>
+                            <div class="in-img">
+                                <img src="../images/temp/project6.png" alt="">
+                            </div>
+                            <p class="txt">
+                                글로 직역하자면<br>
+                                내가 지금 클릭한 것을 누르면 remove()가 되고
+                            </p>
+                            <div class="in-img">
+                                <img src="../images/temp/project1.png" alt="">
+                            </div>
+                            <p class="txt">
+                                todo안에 들어가있는 배열들이 filter의 todo를 새배열을 만들어<br>
+                                toDo.id 가 parent.id 문자열 숫자가 아니라면 saveToDos()로 넘어가 return 해줘! 이다.
+                            </p>
+                            <div class="in-img">
+                                <img src="../images/temp/project6.png" alt="">
+                            </div>
+                            <p class="txt">
+                                여기까지 생성하는 법을 보았다.
+                                다음 새로운 가정을 세워보자.<br> 
+                                저장하고 추가하는 관리를 하기위해선 무얼할수 있을까?
+                            </p>
+                            <div class="in-img">
+                                <img src="../images/temp/project8.png" alt="">
+                            </div>
+                            <p class="txt">getItem으로 저장,추가,정보확인,가져오기 등이 가능하다.</p>
+                            <div class="in-img">
+                                <img src="../images/temp/project7.png" alt="">
+                            </div>
+                            <p class="txt">배열 toDos가 getItem에 의해 존재여부를 파악할수 있는데,</p>
+                            <div class="in-img">
+                                <img src="../images/temp/project9.png" alt="">
+                            </div>
+                            <p class="txt">
+                                글로 직역하자면,
+                                <br>
+                                <br>
+                                저장된 strorage안에 null값이 아니라면(아무것도 들어있지 않는 상태면 null 값)
+                                <br>저장된 strorage는 객체를 생성한다.<br>
+                                이것을 toDos 라는 변수에 새로 담고, createToDo를 forEach 반복문을 돌려 return한다.
+                            </p>
+
+                            <p class="txt"></p>
+
+
+                    </div>
+                    <div class="content-txt-wrap">
+                        <h4 class="label">느낀 점</h4>
+                        <p class="txt">
+                            평소 실무에 자주 사용하는 것들에 관심이 많고 관련된 공부를 하면서 업데이트를 하려고 노력한다. <br>
+                            공부한 것들을 실무에 적용하는 작은 순간들이 개발자로서 가장 큰 만족도를 높여주는 것 같다.
+                        </p>
+                    </div>
+                </div>
+                <div class="content-txt-wrap">
+                    <h4 class="label">마무리</h4>
+                    <p class="txt">
+                    </p>
+                </div>
+            </div>
+        </section>
+        <div class="prev-page">
+            <a href="./javascript1.html" class="list-go">목록으로</a>
+        </div>
+    </main>
+	${ require( './include/footer.html' )() }
+</div>
+</body>
+</html>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
