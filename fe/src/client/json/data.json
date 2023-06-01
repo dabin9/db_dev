@@ -1,0 +1,16 @@
+[
+	{
+		"name" : "박다빈",
+		"type" : "re-html",
+		"link" : "https://naver.com",
+		"nickname" : "빈카츄",
+		"skill" : ["HTML", "CSS", "JAVASCRIPT"]
+	},
+	{
+		"name" : "김기락",
+		"type" : "re-javascript",
+		"link" : "https://google.com",
+		"nickname" : "진국",
+		"skill" : ["HTML5", "CSS3", "JAVASCRIPT6"]
+	}
+]

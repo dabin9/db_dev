@@ -2,7 +2,7 @@ import { sync } from 'glob';
 
 const DIR = {
   SRC : 'src/client', 
-  DEST : 'dist', 
+  DEST : '../../rel/dist', 
   appRoot : __dirname, 
   chunkList : [], 
   PORT : 8001, 
@@ -14,7 +14,7 @@ let { SRC : _SRC, appRoot : _appRoot, PORT : _PORT } = DIR
 		// dev : `http://k712771.cafe24.com/webpack/images/` , 
 		// pro : `http://localhost:${ _PORT }/asdasdada/images/`, 
 		dev : `http://localhost:${ _PORT }/images/`, 
-		pro : `/images/`, 
+		pro : `https://dabin9.github.io/rel/dist/images/`, 
 		// dev : `http&:#58;//localhost:#58;${ _PORT }/client/images/`, 
 		// pro : `http:#58;//localhost:#58;${ _PORT }/asdsadasdasd/images/`, 
 	}, 
