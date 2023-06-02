@@ -240,6 +240,127 @@ function commonActiveTab() {
         init();
     })();
 }
+const appendDatas = function() {
+	function make_dom( datas ) {
+		let 
+			ul = document.createElement("ul")
+		,	li = document.createElement("li")
+		,	div = document.createElement("div")
+		;
+
+		ul.classList.add("data-list");	//	css를 위한 class추가
+		
+		// 받은 데이터는 최상위가 배열로 되어있기 때문에 반복문을 돌림
+		datas.forEach( data => {
+			let new_li = li.cloneNode( true );	// li를 계속 넣기 위해 복사
+			// data는 object형태로 들어가기 때문에 for in문으로 데이터 별로 돌려서 DOM Element에 추가
+			for( const property in data ) {
+				/**
+				 * @property : object property명
+				 * @data : object 한개의 데이터
+				 */
+				let 
+                    new_div = div.cloneNode( true );	//	데이터를 넣기 위한 div를 복사
+				new_div.innerHTML = `<span class="label">${ property }</span><span class="text">${ data[property] }</span>`;	// 복사한 div에 데이터를 넣음
+				new_li.appendChild( new_div );	// 복사인 li에 div를 넣음
+			}
+			// 각 object의 속성별로 li에 넣는 것 완료
+
+			ul.appendChild( new_li );	// 완료된 li를 ul에 추가
+		});
+
+		document.querySelector(".content").appendChild( ul );	// 완성된 ul DOM Element를 .wrap에 넣음
+	}
+
+
+	function dom1() {
+		function get_json_data() {
+			fetch("/json/data1.json")
+			.then( response => response.json() )
+			.then( data => {
+				make_dom( data );
+			});
+		}
+		get_json_data();
+	}
+	function dom2() {
+		function get_json_data() {
+			fetch("/json/data2.json")
+			.then( response => response.json() )
+			.then( data => {
+				make_dom( data );
+			});
+		}
+		get_json_data();
+	}
+	function dom3() {
+		function get_json_data() {
+			fetch("/json/data3.json")
+			.then( response => response.json() )
+			.then( data => {
+				make_dom( data );
+			});
+		}
+		get_json_data();
+	}
+    function dom4() {
+		function get_json_data() {
+			fetch("/json/data4.json")
+			.then( response => response.json() )
+			.then( data => {
+				make_dom( data );
+			});
+		}
+		get_json_data();
+	}
+    function dom5() {
+		function get_json_data() {
+			fetch("/json/data5.json")
+			.then( response => response.json() )
+			.then( data => {
+				make_dom( data );
+			});
+		}
+		get_json_data();
+	}
+	
+	function page_chk() {
+		let pages = document.querySelectorAll((".page"));
+
+		window.addEventListener("load", ( event )=> {
+			pages.forEach(( page ) => {
+				let 
+					page1 = document.querySelector(".type1"),
+					page2 = document.querySelector(".type2"),
+					page3 = document.querySelector(".type3"),
+					page4 = document.querySelector(".type4"),
+					page5 = document.querySelector(".type5")
+				;
+				if ( page.contains(page1) ) {
+					dom1();
+				} else if ( page.contains(page2) ) {
+					dom2();
+				} else if ( page.contains(page3) ) {
+					dom3();
+				} else if ( page.contains(page4) ) {
+					dom4();
+				} else if ( page.contains(page5) ) {
+					dom5();
+				}
+			})
+		})
+	}
+
+	function init() {
+		page_chk();
+	}
+
+	( _ => {
+		init();
+	})();
+}
+
+
 
 new mToggle;
 new hoverGnb;
@@ -249,6 +370,7 @@ new activeIcon;
 new inpCreditNum;
 new chkActive;
 new commonActiveTab;
+new appendDatas;
 
 // swiper
 

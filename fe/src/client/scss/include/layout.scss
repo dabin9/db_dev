@@ -373,50 +373,9 @@ header {
         padding-top: 10px;
     } //  .txt 
 } // .content-txt-wrap 
-.link-list-wrap {
-    padding: 50px 0;
-    .list-box {
-        max-width: #{$pc-inner-size}px;
-        width: 100%;
-        margin: 0 auto;
-        .list {
-            display: flex;
-            height: 50px;
-            align-items: center;
-            &:not(:first-of-type) {
-                &:hover {
-                    span {
-                        &.title {
-                            border-bottom: 1px solid #ccc;
-                        }
-                    }
-                }
-            }
-            .link-go {
-                flex: 1;
-                max-width: initial;
-                width: auto;
-            }
-            span {
-                max-width: 100px;
-                width: 100%;
-                text-align: center;
-                &.title {
-                    flex: 1;
-                    max-width: initial;
-                    width: auto;
-                    text-align: start;
-
-                }
-            }
-
-
-        }
-    }
-} // .link-list-wrap
 .notice-slide {
     height: 173px;
-}
+} // .notice-slide
 .input-div {
 
     .pw-custom-wrap {
@@ -643,6 +602,12 @@ header {
         }
     }
 } // .common-card
+.list-section {
+    padding: 50px 0;
+    max-width: #{$pc-inner-size}px;
+    width: 100%;
+    margin: 0 auto;
+}
 
 
 @media (max-width: #{$tablet-size}px) {
