@@ -275,7 +275,7 @@ const appendDatas = function() {
 
 	function dom1() {
 		function get_json_data() {
-			fetch("/json/data1.json")
+			fetch("./json/data1.json")
 			.then( response => response.json() )
 			.then( data => {
 				make_dom( data );
@@ -285,7 +285,7 @@ const appendDatas = function() {
 	}
 	function dom2() {
 		function get_json_data() {
-			fetch("/json/data2.json")
+			fetch("./json/data2.json")
 			.then( response => response.json() )
 			.then( data => {
 				make_dom( data );
@@ -295,7 +295,7 @@ const appendDatas = function() {
 	}
 	function dom3() {
 		function get_json_data() {
-			fetch("/json/data3.json")
+			fetch("./json/data3.json")
 			.then( response => response.json() )
 			.then( data => {
 				make_dom( data );
@@ -305,7 +305,7 @@ const appendDatas = function() {
 	}
     function dom4() {
 		function get_json_data() {
-			fetch("/json/data4.json")
+			fetch("./json/data4.json")
 			.then( response => response.json() )
 			.then( data => {
 				make_dom( data );
@@ -315,7 +315,7 @@ const appendDatas = function() {
 	}
     function dom5() {
 		function get_json_data() {
-			fetch("/json/data5.json")
+			fetch("./json/data5.json")
 			.then( response => response.json() )
 			.then( data => {
 				make_dom( data );
