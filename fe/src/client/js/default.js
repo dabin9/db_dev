@@ -372,6 +372,7 @@ new chkActive;
 new commonActiveTab;
 new appendDatas;
 
+
 // swiper
 
 new Swiper(".notice-slide", {
