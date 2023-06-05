@@ -91,6 +91,7 @@ header {
                 transform: rotate(135deg) translate(3px, -1px);
                 width: 100%;
                 &::after{
+                    content: "close";
                     bottom: -20px;
                     transform: rotate(-180deg);
                     opacity: .2;
@@ -672,6 +673,7 @@ footer {
     margin: 0 auto;
 } // .list-section
 .content-list-wrap {
+    padding: 0 10px;
     .banner {
         display: flex;
         justify-content: space-between;
