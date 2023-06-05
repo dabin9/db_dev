@@ -269,7 +269,7 @@ const appendDatas = function() {
 			ul.appendChild( new_li );	// 완료된 li를 ul에 추가
 		});
 
-		document.querySelector(".content").appendChild( ul );	// 완성된 ul DOM Element를 .wrap에 넣음
+		document.querySelector(".data-content").appendChild( ul );	// 완성된 ul DOM Element를 .wrap에 넣음
 	}
 
 
@@ -359,6 +359,39 @@ const appendDatas = function() {
 		init();
 	})();
 }
+function toggleDatasList() {
+    let 
+        btns = Array.prototype.slice.call(document.querySelectorAll(".list-toggle"))
+    ,   layer = Array.prototype.slice.call(document.querySelectorAll(".data-content"))
+    ;
+
+    function toggle_listener( e ) {
+        btns.forEach(( btn, i )=>{
+            if ( idx == i ) {
+                btn.classList.toggle("show-layer-active");
+                layer[i].classList.toggle("show")
+            }
+        })
+    }
+
+    function append_event( e ) {
+        // console.log(e.currentTarget);
+        idx = btns.indexOf(e.currentTarget);
+        toggle_listener( idx );
+    }
+
+    function event_listener() {
+        btns.forEach(( btn )=>{
+            if ( btn ) btn.addEventListener("click", append_event);
+        })
+    }
+    function init() {
+        event_listener();
+    }
+    (function() {
+        init();
+    })();
+}
 
 
 
@@ -371,6 +404,7 @@ new inpCreditNum;
 new chkActive;
 new commonActiveTab;
 new appendDatas;
+new toggleDatasList;
 
 
 // swiper

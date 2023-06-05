@@ -5,55 +5,175 @@
                 <span>전체글</span>
                 <ul class="tab-btns">
                     <li>
-                        <button type="button" class="tab-btn">list</button>
+                        <button type="button" class="tab-btn list"><img src="../images/icon/ico-list.png" alt=""></button>
                     </li>
                     <li>
-                        <button type="button" class="tab-btn">card</button>
+                        <button type="button" class="tab-btn grid"><img src="../images/icon/ico-grid.png" alt=""></button>
                     </li>
                 </ul>
             </div>
             <div class="tab-contents">
                 <div class="content list-content tab-content-active">
-                    <div class="common-list">
-                        <a href="#" class="detail-go"></a>
-                        <div class="text-wrap">
-                            <div class="ctg-banner">
-                                <span class="ctg">davin's 리팩토링</span><span class="ctg">javascript</span>
+                    <section class="list-section">
+                        <div class="common-list">
+                            <a href="./mark1-1.html" class="detail-go"></a>
+                            <div class="text-wrap">
+                                <div class="ctg-banner">
+                                    <span class="ctg">davin's 리팩토링</span><span class="ctg">Mark-up/CSS</span>
+                                </div>
+                                <p class="title">Grid layout 기초 이해하기</p>
+                                <p class="wh-content">
+                                    복잡한 layout을 grid의 규칙을 파악하고 적절하게 사용할줄만 안다면 쉽게 구성해낼수 있다. 또한 현재 날짜 기준으로 익스플로러의 사망(?)으로 인해 grid를 사용하는데 있어 크게 제한이 없다.
+                                </p>
                             </div>
-                            <p class="title">실무에 자주 이용하는 input collection</p>
-                            <p class="wh-content">
-                                실무에 자주 이용하는 input collection이다.<br>
-                                1년동안 에이전시에서 근무하면서 스무개가 넘는 프로젝트와 모두 런칭을 해보면서 가장 많이 이용했던 인풋 태그의 패턴을 추려보았다.<br>
-                                실무에 자주 이용하는 input collection이다.<br>
-                                1년동안 에이전시에서 근무하면서 스무개가 넘는 프로젝트와 모두 런칭을 해보면서 가장 많이 이용했던 인풋 태그의 패턴을 추려보았다.<br>
-                            </p>
-                        </div>
-                        <div class="list-thumb">
-                            <img src="../images/temp/list-thumb0.png" alt="">
-                        </div>
-                    </div>
-                    <div class="common-list">
-                        <a href="#" class="detail-go"></a>
-                        <div class="text-wrap">
-                            <div class="ctg-banner">
-                                <span class="ctg">davin's 리팩토링</span><span class="ctg">javascript</span>
+                            <div class="list-thumb">
+                                <img src="../images/temp/list-thumb0.png" alt="">
                             </div>
-                            <p class="title">실무에 자주 이용하는 input collection</p>
-                            <p class="wh-content">
-                                실무에 자주 이용하는 input collection이다.<br>
-                                1년동안 에이전시에서 근무하면서 스무개가 넘는 프로젝트와 모두 런칭을 해보면서 가장 많이 이용했던 인풋 태그의 패턴을 추려보았다.<br>
-                                실무에 자주 이용하는 input collection이다.<br>
-                                1년동안 에이전시에서 근무하면서 스무개가 넘는 프로젝트와 모두 런칭을 해보면서 가장 많이 이용했던 인풋 태그의 패턴을 추려보았다.<br>
-                            </p>
                         </div>
-                        <div class="list-thumb">
-                            <img src="../images/temp/list-thumb0.png" alt="">
+                        <div class="common-list">
+                            <a href="./javascript1-1.html" class="detail-go"></a>
+                            <div class="text-wrap">
+                                <div class="ctg-banner">
+                                    <span class="ctg">davin's 리팩토링</span><span class="ctg">javascript</span>
+                                </div>
+                                <p class="title">scroll-animation 구현 1</p>
+                                <p class="wh-content">
+                                    텍스트를 강조할때 가장 많이 이용하는 애니메이션이다.
+                                </p>
+                            </div>
+                            <div class="list-thumb">
+                                <img src="../images/temp/list-thumb0.png" alt="">
+                            </div>
                         </div>
-                    </div>
+                        <div class="common-list">
+                            <a href="./javascript1-2.html" class="detail-go"></a>
+                            <div class="text-wrap">
+                                <div class="ctg-banner">
+                                    <span class="ctg">davin's 리팩토링</span><span class="ctg">javascript</span>
+                                </div>
+                                <p class="title">scroll-animation 구현 2</p>
+                                <p class="wh-content">
+                                    스크롤이 해당 element에 닿을때, 작동하는 애니메이션이 구현이 되는 것과 스크롤 위치에 따라 프로그레스바 구현을 해보았다.
+                                </p>
+                            </div>
+                            <div class="list-thumb">
+                                <img src="../images/temp/list-thumb0.png" alt="">
+                            </div>
+                        </div>
+                        <div class="common-list">
+                            <a href="./mark1-2.html" class="detail-go"></a>
+                            <div class="text-wrap">
+                                <div class="ctg-banner">
+                                    <span class="ctg">davin's 리팩토링</span><span class="ctg">Mark-up/CSS</span>
+                                </div>
+                                <p class="title">Grid layout 심화 이해하기</p>
+                                <p class="wh-content">
+                                    textgrid의 minmax는 min(최솟값)과 max(최댓값)을 정해두어 colums과 row의 트랙의 비율에 맞게, 유연하게 auto로 바뀐다. 요즘에 많이 나오은 폴더블폰이나 언젠가 휴대폰이 세모나 별모양이 될지 모를때,
+                                </p>
+                            </div>
+                            <div class="list-thumb">
+                                <img src="../images/temp/list-thumb0.png" alt="">
+                            </div>
+                        </div>
+                        <div class="common-list">
+                            <a href="./javascript2-1.html" class="detail-go"></a>
+                            <div class="text-wrap">
+                                <div class="ctg-banner">
+                                    <span class="ctg">davin's 리팩토링</span><span class="ctg">javascript</span>
+                                </div>
+                                <p class="title">실무에 자주 이용하는 input collection</p>
+                                <p class="wh-content">
+                                    실무에 자주 이용하는 input collection이다.<br>
+                                    1년동안 에이전시에서 근무하면서 스무개가 넘는 프로젝트와 모두 런칭을 해보면서 가장 많이 이용했던 인풋 태그의 패턴을 추려보았다.<br>
+                                    실무에 자주 이용하는 input collection이다.<br>
+                                    1년동안 에이전시에서 근무하면서 스무개가 넘는 프로젝트와 모두 런칭을 해보면서 가장 많이 이용했던 인풋 태그의 패턴을 추려보았다.<br>
+                                </p>
+                            </div>
+                            <div class="list-thumb">
+                                <img src="../images/temp/list-thumb0.png" alt="">
+                            </div>
+                        </div>
+                        <div class="common-list">
+                            <a href="./project1.html" class="detail-go"></a>
+                            <div class="text-wrap">
+                                <div class="ctg-banner">
+                                    <span class="ctg">davin's 리팩토링</span><span class="ctg">javascript</span>
+                                </div>
+                                <p class="title">자유로운 이동이 가능한 투드리스트 1 (데이터 다루기편)</p>
+                                <p class="wh-content">
+                                    어떤 기능을 구현해볼까 하다가 내가 지금 필요한게 무엇인지 생각해보니 투두리스트가 적격이었다. 내가 필요했던 기능은,
+                                </p>
+                            </div>
+                            <div class="list-thumb">
+                                <img src="../images/temp/list-thumb0.png" alt="">
+                            </div>
+                        </div>
+                    </section>
                 </div>
                 <div class="content card-content">
                     <div class="common-card">
-                        <a href="#" class="detail-go"></a>
+                        <a href="./mark1-1.html" class="detail-go"></a>
+                        <div class="list-thumb">
+                            <img src="../images/temp/list-thumb0.png" alt="">
+                        </div>
+                        <div class="text-wrap">
+                            <div class="ctg-banner">
+                                <span class="ctg">davin's 리팩토링</span><span class="ctg">Mark-up/CSS</span>
+                            </div>
+                            <p class="title">Grid layout 기초 이해하기</p>
+                            <p class="wh-content">
+                                복잡한 layout을 grid의 규칙을 파악하고 적절하게 사용할줄만 안다면 쉽게 구성해낼수 있다. 또한 현재 날짜 기준으로 익스플로러의 사망(?)으로 인해 grid를 사용하는데 있어 크게 제한이 없다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="common-card">
+                        <a href="./javascript1-1.html" class="detail-go"></a>
+                        <div class="list-thumb">
+                            <img src="../images/temp/list-thumb0.png" alt="">
+                        </div>
+                        <div class="text-wrap">
+                            <div class="ctg-banner">
+                                <span class="ctg">davin's 리팩토링</span><span class="ctg">javascript</span>
+                            </div>
+                            <p class="title">scroll-animation 구현 1</p>
+                            <p class="wh-content">
+                                텍스트를 강조할때 가장 많이 이용하는 애니메이션이다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="common-card">
+                        <a href="./javascript1-2.html" class="detail-go"></a>
+                        <div class="list-thumb">
+                            <img src="../images/temp/list-thumb0.png" alt="">
+                        </div>
+                        <div class="text-wrap">
+                            <div class="ctg-banner">
+                                <span class="ctg">davin's 리팩토링</span><span class="ctg">javascript</span>
+                            </div>
+                            <p class="title">scroll-animation 구현 2</p>
+                            <p class="wh-content">
+                                스크롤이 해당 element에 닿을때, 작동하는 애니메이션이 구현이 되는 것과 스크롤 위치에 따라 프로그레스바 구현을 해보았다.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="common-card">
+                        <a href="./mark1-2.html" class="detail-go"></a>
+                        <div class="list-thumb">
+                            <img src="../images/temp/list-thumb0.png" alt="">
+                        </div>
+                        <div class="text-wrap">
+                            <div class="ctg-banner">
+                                <span class="ctg">davin's 리팩토링</span><span class="ctg">Mark-up/CSS</span>
+                            </div>
+                            <p class="title">Grid layout 심화 이해하기</p>
+                            <p class="wh-content">
+                                textgrid의 minmax는 min(최솟값)과 max(최댓값)을 정해두어 colums과 row의 트랙의 비율에 맞게, 유연하게 auto로 바뀐다. 요즘에 많이 나오은 폴더블폰이나 언젠가 휴대폰이 세모나 별모양이 될지 모를때,
+                            </p>
+                        </div>
+                    </div>
+                    <div class="common-card">
+                        <a href="./javascript2-1.html" class="detail-go"></a>
                         <div class="list-thumb">
                             <img src="../images/temp/list-thumb0.png" alt="">
                         </div>
@@ -71,7 +191,7 @@
                         </div>
                     </div>
                     <div class="common-card">
-                        <a href="#" class="detail-go"></a>
+                        <a href="./project1.html" class="detail-go"></a>
                         <div class="list-thumb">
                             <img src="../images/temp/list-thumb0.png" alt="">
                         </div>
@@ -79,66 +199,9 @@
                             <div class="ctg-banner">
                                 <span class="ctg">davin's 리팩토링</span><span class="ctg">javascript</span>
                             </div>
-                            <p class="title">실무에 자주 이용하는 input collection</p>
+                            <p class="title">자유로운 이동이 가능한 투드리스트 1 (데이터 다루기편)</p>
                             <p class="wh-content">
-                                실무에 자주 이용하는 input collection이다.<br>
-                                1년동안 에이전시에서 근무하면서 스무개가 넘는 프로젝트와 모두 런칭을 해보면서 가장 많이 이용했던 인풋 태그의 패턴을 추려보았다.<br>
-                                실무에 자주 이용하는 input collection이다.<br>
-                                1년동안 에이전시에서 근무하면서 스무개가 넘는 프로젝트와 모두 런칭을 해보면서 가장 많이 이용했던 인풋 태그의 패턴을 추려보았다.<br>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="common-card">
-                        <a href="#" class="detail-go"></a>
-                        <div class="list-thumb">
-                            <img src="../images/temp/list-thumb0.png" alt="">
-                        </div>
-                        <div class="text-wrap">
-                            <div class="ctg-banner">
-                                <span class="ctg">davin's 리팩토링</span><span class="ctg">javascript</span>
-                            </div>
-                            <p class="title">실무에 자주 이용하는 input collection</p>
-                            <p class="wh-content">
-                                실무에 자주 이용하는 input collection이다.<br>
-                                1년동안 에이전시에서 근무하면서 스무개가 넘는 프로젝트와 모두 런칭을 해보면서 가장 많이 이용했던 인풋 태그의 패턴을 추려보았다.<br>
-                                실무에 자주 이용하는 input collection이다.<br>
-                                1년동안 에이전시에서 근무하면서 스무개가 넘는 프로젝트와 모두 런칭을 해보면서 가장 많이 이용했던 인풋 태그의 패턴을 추려보았다.<br>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="common-card">
-                        <a href="#" class="detail-go"></a>
-                        <div class="list-thumb">
-                            <img src="../images/temp/list-thumb0.png" alt="">
-                        </div>
-                        <div class="text-wrap">
-                            <div class="ctg-banner">
-                                <span class="ctg">davin's 리팩토링</span><span class="ctg">javascript</span>
-                            </div>
-                            <p class="title">실무에 자주 이용하는 input collection</p>
-                            <p class="wh-content">
-                                실무에 자주 이용하는 input collection이다.<br>
-                                1년동안 에이전시에서 근무하면서 스무개가 넘는 프로젝트와 모두 런칭을 해보면서 가장 많이 이용했던 인풋 태그의 패턴을 추려보았다.<br>
-                                실무에 자주 이용하는 input collection이다.<br>
-                                1년동안 에이전시에서 근무하면서 스무개가 넘는 프로젝트와 모두 런칭을 해보면서 가장 많이 이용했던 인풋 태그의 패턴을 추려보았다.<br>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="common-card">
-                        <a href="#" class="detail-go"></a>
-                        <div class="list-thumb">
-                            <img src="../images/temp/list-thumb0.png" alt="">
-                        </div>
-                        <div class="text-wrap">
-                            <div class="ctg-banner">
-                                <span class="ctg">davin's 리팩토링</span><span class="ctg">javascript</span>
-                            </div>
-                            <p class="title">실무에 자주 이용하는 input collection</p>
-                            <p class="wh-content">
-                                실무에 자주 이용하는 input collection이다.<br>
-                                1년동안 에이전시에서 근무하면서 스무개가 넘는 프로젝트와 모두 런칭을 해보면서 가장 많이 이용했던 인풋 태그의 패턴을 추려보았다.<br>
-                                실무에 자주 이용하는 input collection이다.<br>
-                                1년동안 에이전시에서 근무하면서 스무개가 넘는 프로젝트와 모두 런칭을 해보면서 가장 많이 이용했던 인풋 태그의 패턴을 추려보았다.<br>
+                                어떤 기능을 구현해볼까 하다가 내가 지금 필요한게 무엇인지 생각해보니 투두리스트가 적격이었다. 내가 필요했던 기능은,
                             </p>
                         </div>
                     </div>

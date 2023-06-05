@@ -124,6 +124,50 @@ header {
         display: none;
     }
 } // header 
+footer {
+    .footer-inner {
+        padding: 10px 0 10px 0 ;
+        .info {
+            padding: 20px;
+            &.top {
+                li {
+                    padding: 5px 0;
+                    &.sns {
+                        display: flex;
+                        align-items: center;
+                        padding: 40px 0 0 0;
+                        gap:20px;
+                        a {
+                            font-weight: bold;
+                            font-family: Georgia, 'Times New Roman', Times, serif;
+                            font-size: 13px;
+                        }
+
+                    }
+                    a {
+                        font-family: 'TheJamsil5Bold';
+                        font-weight: 200;
+
+                    }
+                }
+            }
+            &.btm {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 50px 0 0 0;
+                span {
+                    font-size: 10px;
+                    color: #999;
+                }
+            }
+        }
+    }
+}
+.banner {
+    padding: 10px 0;
+    font-size: 13px;
+} // 공통 .banner
 .common-section {
     padding: 5px 0;
     background-color: #f4f4f4;
@@ -131,8 +175,7 @@ header {
          background-color: #f4f4f4;
          padding: 5px 0;
          .banner {
-             padding: 10px 0;
-             font-size: 13px;
+
              position: relative;
          } // .banner
          &.new-box {
@@ -297,7 +340,24 @@ header {
                          .tab-btns {
                             display: flex;
                             align-items: center;
-                            gap:15px;
+                            gap:10px;
+                            li {
+                                .tab-btn {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                               .list {
+                                    img {
+                                        width: 16px;height: 16px;
+                                    }
+                               } 
+                               .grid {
+                                    img {
+                                        width: 20px;height: 18px;
+                                    }
+                               } 
+                            }
                          }
                      } // .banner
                      .tab-contents {
@@ -306,6 +366,9 @@ header {
                                 display: none;
                                 flex-direction: column;
                                 align-items: flex-start;
+                                .list-section {
+                                    padding: 0;
+                                }
                                 &.tab-content-active {
                                     display: flex;
                                 }
@@ -313,7 +376,7 @@ header {
                             &.card-content {
                                 display: none;
                                 flex-wrap: wrap;
-                                justify-content: space-between;
+                                justify-content: flex-start;
                                 gap:10px;
                                 &.tab-content-active {
                                     display: flex;
@@ -603,11 +666,106 @@ header {
     }
 } // .common-card
 .list-section {
-    padding: 50px 0;
+    padding: 50px 10px;
     max-width: #{$pc-inner-size}px;
     width: 100%;
     margin: 0 auto;
-}
+} // .list-section
+.content-list-wrap {
+    .banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left {
+            flex: 1;
+        }
+        .right {
+            max-width: 50px;
+            width: 100%;
+            .list-toggle {
+                width: 100%;height: 30px;
+                position: relative;
+                &::after {
+                    content: '목록열기';
+                    position: absolute;
+                    display: inline-flex;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 100%;
+                    height: 100%;
+                    color: #000;
+                }
+                &.show-layer-active {
+                    &::after {
+                        content: '목록닫기';
+                    }
+                }
+            }
+        }
+    }
+    .data-content {
+        display: none;
+        &.show {
+            display: block;
+        }
+    }
+    &.all {
+        background-color: #fff;
+        .page {
+            max-width: 980px;
+            width: 100%;
+            margin: 0 auto;
+
+        }
+    }
+} // .content-list-wrap
+.data-list {
+    li {
+        width: 100%;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+        border: 1px solid #aaaaaa56;
+        padding: 30px 20px;
+        border-radius: 10px;
+        flex-direction: column;
+        & + li {
+            margin-top: 10px;
+        }
+        span {
+            padding-top: 10px;
+            font-size: 13px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            text-overflow: ellipsis;
+            word-wrap: break-word;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            max-width: 80%;
+        }
+        div {
+            width:100%;
+            &:first-of-type {
+                .text {
+                    font-size: 16px;
+                    font-weight: bold;
+                    padding-top: 20px;
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .label {
+            display:none;
+        }
+    }
+
+} // .data-list
 
 
 @media (max-width: #{$tablet-size}px) {

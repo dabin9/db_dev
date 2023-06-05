@@ -18,12 +18,22 @@ ${ require( './include/head.html' )() }
 			${ require( './alllist.html' )() }
 			<div class="content-list-wrap all">
 				<div class="page">
+					<div class="banner">
+						<div class="left">
+							<p>데이터 다루기 연습중에 있습니다.</p>
+							<span>(실시간 업데이트중입니다.)</span>
+						</div>
+						<div class="right">
+							<button type="button" class="list-toggle"></button>
+						</div>
+					</div>
 					<div class="type1">
-						<div class="content"></div>
+						<div class="data-content"></div>
 					</div>
 				</div>
 			</div>
 		</div>
+
 	</main>
 	${ require( './include/footer.html' )() }
 </div>
