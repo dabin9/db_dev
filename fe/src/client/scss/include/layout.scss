@@ -1,4 +1,19 @@
+.progress-container {
+    width: 100%;
+    height: 10px;
+    background-color: #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    .progress-bar {
+        width: 0;
+        height: 10px;
+        background-color: rgba(0,0,0, .5);
+    }
+}
 header {
+    margin-top: 10px;
     height: 60px;
     display: flex;
     justify-content: flex-start;
@@ -126,6 +141,7 @@ header {
     }
 } // header 
 footer {
+    border-top: 1px solid #f4f4f4;
     .footer-inner {
         padding: 10px 0 10px 0 ;
         .info {
@@ -266,6 +282,7 @@ footer {
                                              margin-top: 10px;
                                          }
                                          .tag {
+                                            margin-left: 5px;
                                          }
                                          .keyword {
                                              color: #333;
@@ -673,11 +690,11 @@ footer {
     margin: 0 auto;
 } // .list-section
 .content-list-wrap {
-    padding: 0 10px;
     .banner {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 10px;
         .left {
             flex: 1;
         }
@@ -723,6 +740,7 @@ footer {
     }
 } // .content-list-wrap
 .data-list {
+    padding: 20px 0;
     li {
         width: 100%;
         width: 100%;

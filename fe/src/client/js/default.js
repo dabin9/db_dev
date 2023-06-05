@@ -393,6 +393,32 @@ function toggleDatasList() {
     })();
 }
 
+function scrollAnimation() {
+    function scroll_listener () {
+        // console.log(document.documentElement.scrollTop)
+       let 
+           winScroll = window.scrollY || document.documentElement.scrollTop
+       ,   height = document.documentElement.scrollHeight - document.documentElement.clientHeight
+       ,   scrolled = ( winScroll / height ) * 100
+       ,   elem = document.querySelector(".progress-bar")
+       ;
+       elem.style.width = scrolled + "%";
+   }
+    function event_listener() {
+        window.addEventListener("load", scroll_listener);
+        window.addEventListener("scroll", scroll_listener);
+    }
+    function init() {
+        event_listener();
+    }
+    (function() {
+        init();
+    })();
+}
+
+
+    
+
 
 
 new mToggle;
@@ -405,14 +431,14 @@ new chkActive;
 new commonActiveTab;
 new appendDatas;
 new toggleDatasList;
-
+new scrollAnimation;
 
 // swiper
 
 new Swiper(".notice-slide", {
     direction: "vertical",
     autoplay: {
-        delay: 2500,
+        delay: 4000,
         disableOnInteraction: false,
       },
     pagination: {
