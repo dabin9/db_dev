@@ -9,51 +9,15 @@ ${ require( './include/head.html' )() }
 	${ require( './include/header.html' )() }
 	<main>
         <section class="list-section">
-            <div class="common-list">
-                <a href="./mark1-1.html" class="detail-go"></a>
-                <div class="text-wrap">
-                    <div class="ctg-banner">
-                        <span class="ctg">davin's 리팩토링</span><span class="ctg">Mark-up/CSS</span>
-                    </div>
-                    <p class="title">Grid layout 기초 이해하기</p>
-                    <p class="wh-content">
-                        복잡한 layout을 grid의 규칙을 파악하고 적절하게 사용할줄만 안다면 쉽게 구성해낼수 있다. 또한 현재 날짜 기준으로 익스플로러의 사망(?)으로 인해 grid를 사용하는데 있어 크게 제한이 없다.
-                    </p>
-                </div>
-                <div class="list-thumb">
-                    <img src="../images/temp/list-thumb1.png" alt="">
-                </div>
-            </div>
-            <div class="common-list">
-                <a href="./mark1-2.html" class="detail-go"></a>
-                <div class="text-wrap">
-                    <div class="ctg-banner">
-                        <span class="ctg">davin's 리팩토링</span><span class="ctg">Mark-up/CSS</span>
-                    </div>
-                    <p class="title">Grid layout 심화 이해하기</p>
-                    <p class="wh-content">
-                        textgrid의 minmax는 min(최솟값)과 max(최댓값)을 정해두어 colums과 row의 트랙의 비율에 맞게, 유연하게 auto로 바뀐다. 요즘에 많이 나오은 폴더블폰이나 언젠가 휴대폰이 세모나 별모양이 될지 모를때,
-                    </p>
-                </div>
-                <div class="list-thumb">
-                    <img src="../images/temp/list-thumb4.png" alt="">
-                </div>
-            </div>
-        </section>
-        <section class="list-section">
             <div class="content-list-wrap mark">
                 <div class="page">
 					<div class="banner">
 						<div class="left">
-							<p>데이터 다루기 연습중에 있습니다.</p>
-							<span>(실시간 업데이트중입니다.)</span>
-						</div>
-						<div class="right">
-							<button type="button" class="list-toggle"></button>
+							<p>Mark-up / CSS <span id="nums"></span></p>
 						</div>
 					</div>
                     <div class="type3">
-                        <div class="data-content"></div>
+                        <ul class="board-contents" id="board-content"></ul>
                     </div>
                 </div>
             </div>

@@ -15,24 +15,19 @@ ${ require( './include/head.html' )() }
 			<!-- 소개 -->
 			${ require( './intro.html' )() }
 			<!-- 모든 글 -->
-			${ require( './alllist.html' )() }
 			<div class="content-list-wrap all">
 				<div class="page">
 					<div class="banner">
 						<div class="left">
-							<p>데이터 다루기 연습중에 있습니다.</p>
-							<span>(실시간 업데이트중입니다.)</span>
-						</div>
-						<div class="right">
-							<button type="button" class="list-toggle"></button>
+							<p>전체 글 <span id="nums"></span></p>
 						</div>
 					</div>
 					<div class="type1">
-						<div class="data-content"></div>
+						<ul class="board-contents" id="board-content"></ul>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
 	</main>
 	${ require( './include/footer.html' )() }

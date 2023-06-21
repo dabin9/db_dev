@@ -1,14 +1,9 @@
 [
     {
-        "title": "scroll-animation 구현 1",
-        "text": "텍스트를 강조할때 가장 많이 이용하는 애니메이션이다."
-    },
-    {
-        "title": "scroll-animation 구현 2",
-        "text": "스크롤이 해당 element에 닿을때, 작동하는 애니메이션이 구현이 되는 것과 스크롤 위치에 따라 프로그레스바 구현을 해보았다."
-    },
-    {
+        "idx": "3",
+        "ctg": "Javascript",
         "title": "실무에 자주 이용하는 input collection",
-        "text": "실무에 자주 이용하는 input collection이다. 1년동안 에이전시에서 근무하면서 스무개가 넘는 프로젝트와 모두 런칭을 해보면서 가장 많이 이용했던 인풋 태그의 패턴을 추려보았다."
+        "text": "실무에 자주 이용하는 input collection이다.1년동안 에이전시에서 근무하면서 스무개가 넘는 프로젝트와 모두 런칭을 해보면서 가장 많이 구현했던 인풋 태그의 패턴을 추려보았다.1.비밀번호 입력2.휴대폰번호 기입3.약관동의 체크",
+        "thumbnail" : "/images/temp/list-thumb4.png"
     }
 ]

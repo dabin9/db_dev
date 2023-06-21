@@ -1,10 +1,16 @@
 [
     {
-        "title": "Grid layout 기초 이해하기",
-        "text": "복잡한 layout을 grid의 규칙을 파악하고 적절하게 사용할줄만 안다면 쉽게 구성해낼수 있다. 또한 현재 날짜 기준으로 익스플로러의 사망(?)으로 인해 grid를 사용하는데 있어 크게 제한이 없다."
+        "idx": "2",
+        "ctg": "Mark-up/css",
+        "title": "Grid layout의 minmax()함수, grid-template-areas 활용하기",
+        "text": "1.minmax() 함수 grid의 minmax는 min(최솟값)과 max(최댓값)을 정해두어 colums과 row의 트랙의 비율에 맞게,유연하게 auto로 바뀐다.",
+        "thumbnail" : "/images/temp/list-thumb3.png"
     },
     {
-        "title": "Grid layout 심화 이해하기",
-        "text": "grid의 minmax는 min(최솟값)과 max(최댓값)을 정해두어 colums과 row의 트랙의 비율에 맞게, 유연하게 auto로 바뀐다. 요즘에 많이 나오은 폴더블폰이나 언젠가 휴대폰이 세모나 별모양이 될지 모를때,"
+        "idx": "1",
+        "ctg": "Mark-up/css",
+        "title": "Grid layout 기초 이해하기",
+        "text": "그리드 레이아웃은 CSS 속성을 간결하게 작성할수 있는 단축 속성이며 지금까지 도입된 CSS 모듈 중 가장 강력한 모듈이다.flex는 1차원 구조고 Grid는 좀더 복잡한 2차원 구조로 되있는 만큼 복잡한 레이아웃일수록 굉장히 쉽게 컨트롤이 가능하다.그리드 레이아웃은 세로 열과 가로 행을 기준으로 정렬하며, 자동으로 최대치까지 채워지는 기본적으로 auto 시스템이다.",
+        "thumbnail" : "/images/temp/list-thumb0.png"
     }
 ]
