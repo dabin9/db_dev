@@ -541,6 +541,14 @@ footer {
         padding-bottom: 50px;
     }
 } // .comment-notice
+.todoimg {
+    max-width: 500px;
+    width: 100%;
+}
+.st {
+    font-weight: bold;
+    font-size: 20px;
+}
 .common-list {
     width: 100%;
     height: 200px;
@@ -1244,6 +1252,7 @@ footer {
             }
         }
     }
+
 }
 @media (max-width: 600px) {
     .common-card {

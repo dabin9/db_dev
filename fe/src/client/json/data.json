@@ -1,11 +1,11 @@
 [
 	{
 	   "idx" : "4",
-	   "title" : "자유로운 이동이 가능한 투드리스트 1 (데이터 다루기편)",
-	   "content" : "준비중입니다.",
+	   "title" : "프론트엔드 개발직 1년차가 투두리스트 기능을 만들수 있을까? feat.그래도 불태웠다.",
+	   "content" : "<p>몇달 전만해도 사실 기능 구현 하나 쉽지 않았었다.<p><br><p>더구나 독학러였기에 삽질이 아니면 내것이 아니다! 라는 포부가 나도 모르게 새겨져 있었다.</p><br><p>문득 나의 위치가 궁금해졌고 만만하게 보였던 투두리스트를 만들어보기로 결심했다.</p><br><p>먼저 디자인을 구성해보았다</p><br><img src='../images/temp/to1.png' class='todoimg'><br><p>1.Add Card를 누르면 왼쪽 카드가 생성</p><br><p>2.카드 생성시 해당 카드 넘버, 타이틀, 투두리스트 담을 박스, 날짜가 복제된다.</p><br><p>3.카드 안에 Add ToDo에 todo를 적고 제출시 li태그가 생성되며 정렬된다.</p><br><br><p class='st'>1.Add Card를 누르면 왼쪽 카드가 생성</p><p>HTML 구조는 Add Card 버튼은 고정으로 label 태그에 감싼 뒤 체크 시에는 input(타이틀 담는 곳)이 보이도록 작성했다.</p><br><img src='../images/temp/to2.png' class='todoimg'><br><p>다음 카드 생성을 위해 <code>submit</code>이 될 때 <code>event.preventDefault</code>로 새로고침을 막아주었다.</p><br><img src='../images/temp/to3.png' class='todoimg'><br><p>다음 여러 정보들이 담겨야해서 새로운 오브젝트를 만들어 push로 배열속에 넣었고 카드생성 함수를 만들어주었다.</p><br><img src='../images/temp/to5.png' class='todoimg'><br><p>카드 생성 함수를 처음엔 map 함수로 돌렸다</p><br><p>그랬더니 반복이 되는 버그를 발견했고, 최초 한개씩만 만들면 되기에 map이 아니라 그냥 함수로 넘겨줘야했다.</p><img src='../images/temp/to4.png' class='todoimg'><br><p>넘겨받은 데이터들은 저장, 생성 그리고 지우기로 나눴다</p><br><img src='../images/temp/to7.png' class='todoimg'><br><p>저장은 setItem의 JSON.stringfy() 메소드로 문자열을 오브젝트형식 값으로 넣어주었다.</p><br><img src='../images/temp/to8.png' class='todoimg'><br><p>다음 생성은 1차.crateElement로 생성 2차.cloneNode()로 복제 3차.appendChild로 상속시켰다. </p><br><br><br><p>중간에 form 안에 form 태그를 한번 더 생성한 바람에 무한콜백함수지옥을 맛보았다. ㅎ</p><br><img src='../images/temp/to9.png' class='todoimg'><br><p>문제를 발견했다. 엔터를 눌러도 다음 카드 생성이 되지 않는것이였다.</p><br><p>처음엔 return 문제인건가 싶어서 실행함수 쪽에 console을 찍어보았는데 다음 실행이 되지 않는 것을 발견했다</p><br><img src='../images/temp/to10.png' class='todoimg'><br><p>다음 실행이 되지 않는걸 보니 input 쪽 문제가 확실했지만 찾을수가 없었다... 알고보니 카드 안에 들어가는 input에 required를 적는바람에 필수로 적어야하니 다음 실행을 하지 않는것이였다.</p><br><p>그리고선 잘 되가다가 안에 있는 함수를 밖으로도 될수있게 하는방법인 전역함수를 작성해서 카드 안에 있는 input에도 똑같은 방법으로 생성될수 있게 밖에 있는 함수들을 재활용해야했는데 이걸 못적겠더라 ㅠ ㅠ</p><br>두번째 문제는 input의 포커스 부분을 고쳐야하는데 엄두가 나질 않았다.. 원인은 아는데... 고칠수가 없어요.......흐앙<br><p>이 부분은 오만가지 생각 끝에 좀 더 공부한 뒤에 차근차근 업데이트 하기로 결정했다.</p><br><p>다음 스토리지에 저장된 걸 삭제, 새로고침되도 기록되어있는 부분을 작성했다.</p><br><br><img src='../images/temp/to11.png' class='todoimg'><img src='../images/temp/to12.png' class='todoimg'><br><br><p>당장에 사용할수 있는 투두리스트는 완성되지 못했지만, 이만치 성장한것에 자랑스럽고 또 더 열심히 해야겠다..!</p><img src='../images/temp/to13.png' class='todoimg'><p>귀여운 나의 지못미투두리스트..</p><br><br><p>더 공부해서 얼른 완성시켜주께 나의 뚜두..🫠</p>",
 	   "wname" : "DAVINCI",
 	   "hit" : 10,
-	   "wdate" : "2023-06-21"
+	   "wdate" : "2023-06-22"
 	},
 	{
 	   "idx" : "3",
